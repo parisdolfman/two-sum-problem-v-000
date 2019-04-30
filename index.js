@@ -12,7 +12,7 @@ function bruteForceTwoSum(a, sum) {
 }
 
 function binaryMatch(array, value) {
-  if (array.length == 1) {
+  if (array.length == 1 && array[0] == value) {
     return (array[0] == value)
   }
   let mid = array[Math.floor(array.length / 2)]
